@@ -1,0 +1,173 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --paleblue: hsl(221, 100%, 96%);
+  --lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+  --lightslateblue: hsl(252, 100%, 67%);
+  --lightroyalblue: hsl(241, 81%, 54%);
+  --violetblue: hsla(256, 72%, 46%, 1);
+  --Lightred: hsl(0, 100%, 67%);
+  --orangeyyellow: hsl(39, 100%, 56%);
+  --greenteal: hsl(166, 100%, 37%);
+  --cobaltblue: hsl(234, 85%, 45%);
+  --persianblue: hsla(241, 72%, 46%, 0);
+}
+
+* {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#container {
+  margin-top: 100px;
+  display: flex;
+  width: 600px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+  width: 250px;
+  padding: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--lightslateblue),
+    var(--lightroyalblue)
+  );
+  border-radius: 30px;
+  color: var(--white);
+}
+
+#result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--violetblue),
+    var(--persianblue)
+  );
+}
+
+#result h2 {
+  color: var(--lightslateblue);
+}
+
+#result h3 {
+  color: var(--lightlavender);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#text h1 {
+  color: var(--white);
+  text-align: center;
+  margin-top: 30px;
+}
+
+#text p {
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: var(--lightlavender);
+  width: 250px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#summary {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#status {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 10px;
+}
+
+.status-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 10px;
+  width: 250px;
+  border-radius: 10px;
+  color: var(--lightlavender);
+}
+
+.status-item span {
+  color: #000;
+  margin-left: 80px;
+}
+
+#reaction {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+#reaction h4 {
+  color: var(--Lightred);
+}
+
+#memory {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+#memory h4 {
+  color: var(--orangeyyellow);
+}
+
+#verbal {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+#verbal h4 {
+  color: var(--greenteal);
+}
+
+#visual {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+#visual h4 {
+  color: var(--cobaltblue);
+}
+
+#verbal span {
+  margin-left: 95px;
+}
+
+#visual span {
+  margin-left: 99px;
+}
+
+#buttom {
+  padding: 10px 80px;
+  background-color: var(--Darkgrayblue);
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
